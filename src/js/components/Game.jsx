@@ -76,8 +76,12 @@ const Game = ({
         </div>
       </div>
 
-      <button onClick={handleReset}>Start Over</button>
-      <button onClick={onBack}>Back</button>
+      <button className="btn btn-dark mt-2" onClick={handleReset}>
+        Start Over
+      </button>
+      <button className="btn btn-dark mt-2" onClick={onBack}>
+        Back
+      </button>
     </div>
   );
 };

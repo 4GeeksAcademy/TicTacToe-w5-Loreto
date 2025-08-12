@@ -22,7 +22,7 @@ const PickWeapon = ({ onStart, defaultNames = { X: "", O: "" } }) => {
       className="d-flex flex-column align-items-center gap-3"
       style={{ maxWidth: 420, margin: "0 auto" }}
     >
-      <h2 className="mb-2">Choose your weapon & names</h2>
+      <h3 className="mb-2">Choose your weapon & names</h3>
 
       <div className="w-100">
         <label className="form-label text-start w-100">Name for X</label>

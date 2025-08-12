@@ -6,8 +6,7 @@ import Game from "./Game";
 const Home = () => {
   const [step, setStep] = useState("pick");
   const [firstPlayer, setFirstPlayer] = useState("X");
-  const [names, setNames] = useState({ X: "", O: "" }); // ← start empty
-
+  const [names, setNames] = useState({ X: "", O: "" });
   const handleStartGame = ({ firstPlayer: chosen, names: pickedNames }) => {
     setFirstPlayer(chosen);
     setNames(pickedNames);
