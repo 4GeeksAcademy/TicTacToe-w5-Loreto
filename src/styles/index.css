@@ -1,11 +1,45 @@
-/* 
+.board-container {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  width: 100%; /* take full width so flex centering works */
+}
+body {
+  background: #2e2e2e; /* slightly dark grey */
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.cell {
+  border: 1px solid #ccc;
+  font-size: 48px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: none;
+}
 
-*/
+.cell.x {
+  color: gold;
+}
+.cell.o {
+  color: skyblue;
+}
+
+.cell.win {
+  background: #ddd;
+  color: black;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+}
